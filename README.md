@@ -2,72 +2,50 @@
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+<h1 align="center"> Projeto Final Bloco 02 (Generation Brasil) - Documentação </h1>
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
+# Índice
+
+* [Índice](#índice)
+* [Descrição do Projeto](#descrição-do-projeto)
+* [Status do Projeto](#status-do-projeto)
+* [Objetivo do Projeto](#objetivo-do-projeto)
+* [Requisitos do Projeto](#requisitos-do-projeto)
+* [Desenvolvedor do Projeto](#desenvolvedor-do-projeto)
+
+
+# Descrição do Projeto
+
+O Projeto Final do Bloco 02 da Generation Brasil envolveu a criação de uma aplicação utilizando o framework Nest.js. Neste projeto, foi implementado um sistema com funcionalidades de CRUD completo, permitindo a criação, leitura, atualização e exclusão com relacionamentos entre os recursos da aplicação. Além disso, para garantir a segurança dos dados e usuários, medidas de segurança foram implementadas em toda a aplicação. Todos os recursos foram submetidos a testes, assegurando a qualidade e confiabilidade. Este projeto é um reflexo das habilidades adquiridas no Bootcamp de Desenvolvedor JavaScript Full Stack, aplicando conceitos avançados e desenvolvendo uma aplicação pronta para uso em ambientes reais.
+
+# Status do Projeto
+
+<p>
+<img loading="lazy" src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
 </p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+# Objetivo do Projeto
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+O Projeto Final do Bloco 02 da Generation Brasil teve como objetivo principal consolidar e aplicar as técnicas e habilidades adquiridas ao longo do bootcamp de Desenvolvedor JavaScript Full Stack. O desafio serviu como uma oportunidade valiosa para demonstrar capacidade de aplicar conceitos e criar uma aplicação utilizando o framework Nest.js, visando não apenas a implementação de funcionalidades básicas, como CRUD completo e relacionamentos entre recursos, mas também o aprimoramento de práticas avançadas de desenvolvimento.
 
-## Installation
+# Requisitos do Projeto
 
-```bash
-$ npm install
-```
+- Deve possuir 2 Recursos: Produto e Categoria
+- O Recurso Categoria deve estar Relacionado com o Recurso Produto, em uma relação do tipo Um para Muitos, como mostra o Diagrama de Classes abaixo:
 
-## Running the app
+![knfiqwn](https://github.com/Mariahcpgo/projeto_final_bloco_02/assets/162521119/abd3333d-0b7c-4247-9376-bbd921be3cf3)
 
-```bash
-# development
-$ npm run start
+- ⦁	No Banco de dados da aplicação, as tabelas terão um Relacionamento do tipo Um para Muitos, como mostra o Diagrama de Entidade Relacionamento abaixo:
 
-# watch mode
-$ npm run start:dev
+![ugduwbd](https://github.com/Mariahcpgo/projeto_final_bloco_02/assets/162521119/bf1879f9-bb22-4a61-801b-8f430c6ec916)
 
-# production mode
-$ npm run start:prod
-```
+- Criar o CRUD completo do Recurso Categoria, com os 6 Métodos
+- Criar o CRUD completo do Recurso Produto, com os 6 Métodos, relacionados com o Recurso Categoria
+- Todos os recursos extras acrescentados no projeto valorizam ainda mais a solução criada.
 
-## Test
+# Desenvolvedor do Projeto
 
-```bash
-# unit tests
-$ npm run test
+| [<img loading="lazy" src="https://avatars.githubusercontent.com/u/162521119?v=4" width=115><br>Mariah Garcia](https://github.com/Mariahcpgo) | 
+| :---: | 
 
-# e2e tests
-$ npm run test:e2e
 
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
