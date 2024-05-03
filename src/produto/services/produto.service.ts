@@ -14,7 +14,7 @@ export class ProdutoService{
 
     async findAll(): Promise<Produto[]>{
         return await this.produtoRepository.find({
-            relations: { categoria: true }
+            relations: { categoria: true, usuario: true }
         });
     }
 
@@ -22,7 +22,7 @@ export class ProdutoService{
 
         let produto = await this.produtoRepository.findOne({
             where:{id},
-            relations: { categoria: true }
+            relations: { categoria: true, usuario: true }
         }); 
 
         if (!produto)
@@ -33,7 +33,7 @@ export class ProdutoService{
     async findByNome(nome: string): Promise<Produto[]>{
         return await this.produtoRepository.find({
             where:{nome: ILike(`%${nome}%`)},
-            relations: { categoria: true }
+            relations: { categoria: true, usuario: true }
         });
     }
 

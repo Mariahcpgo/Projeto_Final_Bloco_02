@@ -4,6 +4,9 @@ import { Categoria } from './categoria/entities/categoria.entity';
 import { CategoriaModule } from './categoria/categoria.module';
 import { Produto } from './produto/entitites/produto.entity';
 import { ProdutoModule } from './produto/produto.module';
+import { AuthModule } from './auth/auth.module';
+import { Usuario } from './usuario/entitites/usuario.entity';
+import { UsuarioModule } from './usuario/usuario.module';
 
 @Module({
   imports: [
@@ -14,11 +17,11 @@ import { ProdutoModule } from './produto/produto.module';
       username: 'root',
       password: 'root',
       database: 'db_projeto_final_bloco_02',
-      entities:[Categoria, Produto],
+      entities:[Categoria, Produto, Usuario],
       synchronize: true,
       logging: true,
     }),
-    CategoriaModule, ProdutoModule,
+    CategoriaModule, ProdutoModule, AuthModule, UsuarioModule,
   ],
   controllers: [],
   providers: [],
